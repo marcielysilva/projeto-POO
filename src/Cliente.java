@@ -1,10 +1,13 @@
 import java.util.Date;
+import java.util.List;
+import java.util.ArrayList;
 
 public class Cliente {
     private String nome;
     private String cpf;
     private String dataDeNascimento;
     private Endereco endereco;
+    private List<Conta>conta = new ArrayList<>();
 
     public Cliente(String nome, String cpf, String dataDeNascimento, Endereco endereco) {
         this.nome = nome;
@@ -32,8 +35,4 @@ public class Cliente {
         this.endereco = endereco;
     }
 
-    public static void main(String [] args){
-
-    Conta conta = new Conta("2345789",45 );
-}
 }
